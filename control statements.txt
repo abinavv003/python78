@@ -1,4 +1,4 @@
-Python, control statements are used to control the flow of execution of a program. There are three main types of control statements in Python: `break`, `continue`, and `pass`.
+In Python, control statements are used to control the flow of execution of a program. There are three main types of control statements in Python: `break`, `continue`, and `pass`.
 
 ### Break
 
