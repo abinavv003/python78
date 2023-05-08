@@ -1,0 +1,84 @@
+Python provides a large number of built-in functions that can be used to perform common operations. Here are some examples of built-in functions:
+
+### Print
+
+The `print` function is used to output text or variables to the console:
+
+```python
+print("Hello, world!")
+```
+
+Output:
+
+```
+Hello, world!
+```
+
+### Len
+
+The `len` function is used to get the length of a string, list, tuple, or dictionary:
+
+```python
+string = "Hello, world!"
+print(len(string))  # Output: 13
+
+list = [1, 2, 3, 4, 5]
+print(len(list))  # Output: 5
+```
+
+### Range
+
+The `range` function is used to generate a sequence of numbers:
+
+```python
+for i in range(5):
+    print(i)
+```
+
+Output:
+
+```
+0
+1
+2
+3
+4
+```
+
+### Type
+
+The `type` function is used to get the data type of a variable:
+
+```python
+string = "Hello, world!"
+print(type(string))  # Output: <class 'str'>
+
+list = [1, 2, 3, 4, 5]
+print(type(list))  # Output: <class 'list'>
+```
+
+### Max and Min
+
+The `max` and `min` functions are used to get the maximum and minimum values in a list or tuple:
+
+```python
+list = [1, 2, 3, 4, 5]
+print(max(list))  # Output: 5
+
+tuple = (10, 20, 30, 40, 50)
+print(min(tuple))  # Output: 10
+```
+
+### Sum
+
+The `sum` function is used to get the sum of all the numbers in a list or tuple:
+
+```python
+list = [1, 2, 3, 4, 5]
+print(sum(list))  # Output: 15
+
+tuple = (10, 20, 30, 40, 50)
+print(sum(tuple))  # Output: 150
+```
+
+These are just a few examples of the many built-in functions that Python provides. 

@@ -1,0 +1,16 @@
+Python is a high-level programming language that is easy to learn and widely used in various fields like data science, web development, artificial intelligence, and more. Here are some basic features of Python:
+
+1. Python is an interpreted language, meaning the code is executed line by line rather than compiled beforehand.
+2. Python uses whitespace indentation to indicate code blocks, making the code easy to read and write.
+3. Variables in Python do not need to be explicitly declared and can change type dynamically.
+4. Python supports various data types such as integers, floating-point numbers, strings, lists, tuples, and dictionaries.
+5. Python has a large standard library and numerous third-party packages for various tasks such as data analysis, web development, machine learning, and more.
+6. Python supports object-oriented, functional, and procedural programming paradigms.
+
+To run a simple Python program, open a text editor and type:
+
+```
+print("Hello, World!")
+```
+
+Save the file as "hello.py" and then run the program using the command "python hello.py" in the terminal or command prompt. This will print "Hello, World!" to the screen.

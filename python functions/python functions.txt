@@ -1,0 +1,108 @@
+In Python, a function is a block of code that performs a specific task. Functions help to make code more modular, reusable, and easier to read.
+
+Here's an example of a simple function:
+
+```python
+def greet(name):
+    print("Hello, " + name + "!")
+```
+
+This function is called `greet`, and it takes one argument, `name`. When the function is called with a name argument, it will print a greeting message.
+
+To call the function, simply use the function name followed by the arguments in parentheses:
+
+```python
+greet("John")
+```
+
+Output:
+
+```
+Hello, John!
+```
+
+### Return Values
+
+Functions can also return values using the `return` statement. Here's an example:
+
+```python
+def add_numbers(a, b):
+    return a + b
+```
+
+This function is called `add_numbers`, and it takes two arguments, `a` and `b`. When the function is called with two numbers, it will return the sum of those numbers.
+
+To call the function and store the result in a variable, simply use the function name followed by the arguments in parentheses:
+
+```python
+result = add_numbers(3, 4)
+print(result)
+```
+
+Output:
+
+```
+7
+```
+
+### Default Arguments
+
+Functions in Python can also have default arguments, which are used when an argument is not specified in the function call. Here's an example:
+
+```python
+def greet(name, greeting="Hello"):
+    print(greeting + ", " + name + "!")
+```
+
+This function is called `greet`, and it takes two arguments, `name` and `greeting`. When the function is called with a name argument, it will print a greeting message using the specified greeting or the default greeting "Hello".
+
+To call the function and use the default greeting, simply provide the `name` argument:
+
+```python
+greet("John")
+```
+
+Output:
+
+```
+Hello, John!
+```
+
+To call the function and specify a different greeting, provide both the `name` and `greeting` arguments:
+
+```python
+greet("John", "Good morning")
+```
+
+Output:
+
+```
+Good morning, John!
+```
+
+### Variable Number of Arguments
+
+Functions in Python can also accept a variable number of arguments using the `*args` and `**kwargs` syntax. Here's an example:
+
+```python
+def multiply_numbers(*numbers):
+    product = 1
+    for number in numbers:
+        product *= number
+    return product
+```
+
+This function is called `multiply_numbers`, and it takes any number of arguments. When the function is called with any number of numbers, it will return the product of those numbers.
+
+To call the function with multiple arguments, simply provide the numbers separated by commas:
+
+```python
+result = multiply_numbers(2, 3, 4)
+print(result)
+```
+
+Output:
+
+```
+24
+```

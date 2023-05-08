@@ -1,0 +1,273 @@
+Python Variables
+
+Variable is a name that is used to refer to memory location. Python variable is also known as an identifier and used to hold value.
+
+In Python, we don't need to specify the type of variable because Python is a infer language and smart enough to get variable type.
+
+Variable names can be a group of both the letters and digits, but they have to begin with a letter or an underscore.
+
+It is recommended to use lowercase letters for the variable name. Rahul and rahul both are two different variables.
+
+Identifier Naming
+Variables are the example of identifiers. An Identifier is used to identify the literals used in the program. The rules to name an identifier are given below.
+
+The first character of the variable must be an alphabet or underscore ( _ ).
+All the characters except the first character may be an alphabet of lower-case(a-z), upper-case (A-Z), underscore, or digit (0-9).
+Identifier name must not contain any white-space, or special character (!, @, #, %, ^, &, *).
+Identifier name must not be similar to any keyword defined in the language.
+Identifier names are case sensitive; for example, my name, and MyName is not the same.
+Examples of valid identifiers: a123, _n, n_9, etc.
+Examples of invalid identifiers: 1a, n%4, n 9, etc.
+
+
+
+Variable types in python
+
+
+
+
+
+In Python, variables can be classified as local or global based on their scope. 
+
+Local variables are defined inside a function and can only be accessed within that function. Once the function has completed, the variable is destroyed. Here is an example of a local variable:
+
+```
+def my_function():
+    x = 5
+    print(x)
+
+my_function()  # output: 5
+```
+
+In this example, the variable "x" is defined inside the function "my_function". This variable is a local variable because it can only be accessed within the function.
+
+Global variables, on the other hand, are defined outside of any function and can be accessed from anywhere within the program. Here is an example of a global variable:
+
+```
+x = 5
+
+def my_function():
+    print(x)
+
+my_function()  # output: 5
+```
+
+In this example, the variable "x" is defined outside of the function and can be accessed from within the function "my_function". This variable is a global variable because it can be accessed from anywhere in the program.
+
+If you want to modify a global variable inside a function, you need to use the "global" keyword to indicate that you are referring to the global variable. Here is an example:
+
+```
+x = 5
+
+def my_function():
+    global x
+    x = 10
+    print(x)
+
+my_function()  # output: 10
+print(x)       # output: 10
+```
+
+In this example, we use the "global" keyword to indicate that we are referring to the global variable "x". We then modify the value of "x" inside the function and print its new value. When we call the function and print "x" again outside the function, we can see that its value has been updated.
+
+ local variables are defined inside functions and can only be accessed within the function, while global variables are defined outside of functions and can be accessed from anywhere in the program. If you want to modify a global variable inside a function, you need to use the "global" keyword to indicate that you are referring to the global variable.
+
+
+
+Data types
+
+
+
+Python has several built-in data types that are used to represent different kinds of values. Here are the most commonly used data types in Python:
+
+1. Numeric Types: Numeric data types represent numbers. There are three numeric types in Python:
+
+- int: represents integers (e.g. 5, -10)
+- float: represents floating-point numbers with decimal points (e.g. 3.14, -2.5)
+- complex: represents complex numbers with a real part and an imaginary part (e.g. 3 + 4j)
+
+2. Boolean Type: The Boolean data type represents a binary value of either True or False.
+
+3. Sequence Types: Sequence types represent a sequence of values that are ordered and indexed. There are three sequence types in Python:
+
+- str: represents strings of characters (e.g. "hello world")
+- list: represents a sequence of values that are mutable and can be changed (e.g. [1, 2, 3])
+- tuple: represents a sequence of values that are immutable and cannot be changed (e.g. (1, 2, 3))
+
+4. Set Types: Set types represent a collection of unique elements that are unordered and unindexed. There are two set types in Python:
+
+- set: represents a mutable set of unique elements (e.g. {1, 2, 3})
+- frozenset: represents an immutable set of unique elements (e.g. frozenset({1, 2, 3}))
+
+5. Mapping Types: Mapping types represent a collection of key-value pairs. There is one mapping type in Python:
+
+- dict: represents a mutable mapping of key-value pairs (e.g. {"name": "John", "age": 30})
+
+
+
+Keywords in python 
+
+In Python, keywords are reserved words that have special meaning and cannot be used as variable names, function names, or any other identifiers. Here is a list of Python keywords:
+
+- `and`: a logical operator used for combining conditional statements
+- `as`: used to create an alias for a module, function or class
+- `assert`: used to check if a condition is true and raise an error if it is not
+- `break`: used to exit a loop prematurely
+- `class`: used to define a class
+- `continue`: used to skip the current iteration of a loop and move to the next iteration
+- `def`: used to define a function
+- `del`: used to delete a variable or object
+- `elif`: used in conditional statements to specify an alternative condition
+- `else`: used in conditional statements to specify the block of code to execute if the condition is false
+- `except`: used to catch exceptions
+- `finally`: used in a try...finally block to specify code that should always be executed
+- `for`: used to loop over a sequence of elements
+- `from`: used to import specific attributes or submodules from a module
+- `global`: used to declare a variable as global, meaning it can be accessed from anywhere in the program
+- `if`: used to specify a conditional statement
+- `import`: used to import a module
+- `in`: used to check if a value is in a sequence
+- `is`: used to compare object identities
+- `lambda`: used to create anonymous functions
+- `nonlocal`: used to declare a variable that is not local to the current function or block
+- `not`: a logical operator used to negate a condition
+- `or`: a logical operator used for combining conditional statements
+- `pass`: used as a placeholder for empty code blocks
+- `raise`: used to raise an exception
+- `return`: used to return a value from a function
+- `try`: used to specify a block of code to be tested for errors
+- `while`: used to specify a loop that will continue as long as a certain condition is true
+- `with`: used to specify a block of code to be executed in a context defined by a context manager
+- `yield`: used to generate a value in a generator function
+
+It is important to note that keywords cannot be used as variable names or identifiers in Python, as they are reserved for specific purposes within the language.
+
+
+
+python Literals
+
+
+
+In Python, literals are used to represent fixed values that are assigned to variables or used in expressions. Some common examples of Python literals include:
+
+1. Numeric literals:
+   - Integer literals: These are whole numbers like 1, 2, 3, etc.
+   - Float literals: These are decimal numbers like 3.14, 2.0, etc.
+   - Complex literals: These are numbers of the form a + bj, where a and b are real numbers and j is the imaginary unit.
+
+2. String literals:
+   - These are used to represent text in Python. They are enclosed in either single quotes ('...') or double quotes ("..."). For example: "hello", 'world', etc.
+
+3. Boolean literals:
+   - These are used to represent True or False values in Python.
+
+4. None literal:
+   - This is a special value that represents the absence of a value. It is denoted by the keyword 'None'.
+
+5. Raw string literals:
+   - These are used to represent string literals that contain backslashes (\) without having to escape them. They are enclosed in either single quotes (r'...') or double quotes (r"...").
+
+6. Bytes literals:
+   - These are used to represent byte values. They are enclosed in either single quotes (b'...') or double quotes (b"...").
+
+7. Bytearray literals:
+   - These are used to represent mutable byte arrays. They are enclosed in either single quotes (bytearray(b'...')) or double quotes (bytearray(b"...")).
+
+
+
+
+
+Python Operators
+
+
+
+In Python, operators are symbols or keywords that perform operations on one or more operands. Some common operators in Python include:
+
+1. Arithmetic Operators:
+   - Addition (+): Adds two operands
+   - Subtraction (-): Subtracts two operands
+   - Multiplication (*): Multiplies two operands
+   - Division (/): Divides two operands
+   - Modulus (%): Returns the remainder of division
+   - Exponentiation (**): Raises one operand to the power of another
+
+2. Comparison Operators:
+   - Equal to (==): Returns True if the operands are equal
+   - Not equal to (!=): Returns True if the operands are not equal
+   - Greater than (>): Returns True if the left operand is greater than the right operand
+   - Less than (<): Returns True if the left operand is less than the right operand
+   - Greater than or equal to (>=): Returns True if the left operand is greater than or equal to the right operand
+   - Less than or equal to (<=): Returns True if the left operand is less than or equal to the right operand
+
+3. Logical Operators:
+   - Logical AND (and): Returns True if both operands are True
+   - Logical OR (or): Returns True if at least one of the operands is True
+   - Logical NOT (not): Returns True if the operand is False and vice versa
+
+4. Bitwise Operators:
+   - Bitwise AND (&): Returns a number with bits set to 1 where both operands have bits set to 1
+   - Bitwise OR (|): Returns a number with bits set to 1 where either operand has bits set to 1
+   - Bitwise XOR (^): Returns a number with bits set to 1 where only one operand has bits set to 1
+   - Bitwise NOT (~): Returns the complement of the operand
+   - Left Shift (<<): Shifts the bits of the left operand to the left by the number of bits specified by the right operand
+   - Right Shift (>>): Shifts the bits of the left operand to the right by the number of bits specified by the right operand
+
+5. Assignment Operators:
+   - Simple assignment (=): Assigns the value of the right operand to the left operand
+   - Compound assignment (+=, -=, *=, /=, %=, **=, &=, |=, ^=, <<=, >>=): Performs an operation on the left and right operands, and assigns the result to the left operand
+
+6. Membership Operators:
+   - in: Returns True if a sequence contains a specified value
+   - not in: Returns True if a sequence does not contain a specified value
+
+7. Identity Operators:
+   - is: Returns True if both operands are the same object
+   - is not: Returns True if both operands are not the same object
+
+8. Others:
+   - Comma (,): Used to separate multiple expressions or elements in a list, tuple or dictionary
+   - Colon (:): Used for slicing or in loops, if statements and function definitions
+   - Dot (.): Used to access attributes and methods of an object
+
+Note: These are not all the operators available in Python. There are also additional operators for specific purposes like conditional expressions, lambda functions, etc.
+
+
+Python comments
+
+
+
+
+In Python, comments are used to explain the purpose of the code, make notes, or temporarily disable code. Comments are ignored by the Python interpreter and do not affect the execution of the program. There are two types of comments in Python:
+
+1. Single-Line Comments:
+   - Single-line comments start with the hash symbol (#) and continue until the end of the line. Anything after the hash symbol is considered a comment and will be ignored by the interpreter. For example:
+
+   ```python
+   # This is a single-line comment
+   print("Hello, World!")  # This is also a single-line comment
+   ```
+
+2. Multi-Line Comments:
+   - Multi-line comments, also known as block comments, can be used to write longer comments or temporarily disable blocks of code. In Python, multi-line comments are enclosed in triple quotes (either single quotes or double quotes) and can span across multiple lines. For example:
+
+   ```python
+   """
+   This is a multi-line comment.
+   It can span across multiple lines.
+   This type of comment is also used to temporarily disable code.
+   print("This line won't be executed.")
+   """
+   print("Hello, World!")
+   ```
+
+   Another way to write a multi-line comment is to use the hash symbol (#) on each line. However, this is not recommended for longer comments as it can become tedious to add a hash symbol to each line. For example:
+
+   ```python
+   # This is a multi-line comment
+   # It can span across multiple lines
+   # This type of comment is also used to temporarily disable code
+   # print("This line won't be executed.")
+   print("Hello, World!")
+   ```
+
+It is a good practice to include comments in your code to make it easier to understand and maintain. However, comments should not be overused, and the code itself should be self-explanatory whenever possible.

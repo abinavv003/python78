@@ -1,0 +1,103 @@
+Object-Oriented Programming (OOP) is a programming paradigm that uses objects to represent and manipulate data. Python is an object-oriented programming language, which means it supports the creation of classes and objects.
+
+Here's an example of a simple class in Python:
+
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def say_hello(self):
+        print("Hello, my name is " + self.name + " and I'm " + str(self.age) + " years old.")
+```
+
+This class is called `Person`, and it has two attributes, `name` and `age`, and one method, `say_hello`.
+
+To create an instance of the `Person` class, simply call the class constructor:
+
+```python
+person = Person("John", 30)
+```
+
+This will create a new `Person` object with the name "John" and age 30.
+
+To call the `say_hello` method of the `Person` object, use the dot notation:
+
+```python
+person.say_hello()
+```
+
+Output:
+
+```
+Hello, my name is John and I'm 30 years old.
+```
+
+### Inheritance
+
+Inheritance is one of the key features of OOP, and it allows classes to inherit attributes and methods from a parent class. Here's an example of a class that inherits from the `Person` class:
+
+```python
+class Student(Person):
+    def __init__(self, name, age, student_id):
+        super().__init__(name, age)
+        self.student_id = student_id
+
+    def say_hello(self):
+        print("Hello, my name is " + self.name + " and I'm " + str(self.age) + " years old. My student ID is " + str(self.student_id) + ".")
+```
+
+This class is called `Student`, and it inherits from the `Person` class. It adds a new attribute, `student_id`, and overrides the `say_hello` method.
+
+To create an instance of the `Student` class, simply call the class constructor:
+
+```python
+student = Student("Jane", 20, 12345)
+```
+
+This will create a new `Student` object with the name "Jane", age 20, and student ID 12345.
+
+To call the `say_hello` method of the `Student` object, use the dot notation:
+
+```python
+student.say_hello()
+```
+
+Output:
+
+```
+Hello, my name is Jane and I'm 20 years old. My student ID is 12345.
+```
+
+### Encapsulation
+
+Encapsulation is another key feature of OOP, and it allows the hiding of internal details of an object from the outside world. In Python, encapsulation is achieved through the use of access modifiers.
+
+By convention, attributes and methods that are intended to be private are prefixed with an underscore. Here's an example:
+
+```python
+class BankAccount:
+    def __init__(self, account_number, balance):
+        self._account_number = account_number
+        self._balance = balance
+
+    def deposit(self, amount):
+        self._balance += amount
+
+    def withdraw(self, amount):
+        if amount > self._balance:
+            print("Insufficient funds.")
+        else:
+            self._balance -= amount
+
+    def get_balance(self):
+        return self._balance
+```
+
+This class is called `BankAccount`, and it has two private attributes, `_account_number` and `_balance`, and three methods, `deposit`, `withdraw`, and `get_balance`.
+
+To create an instance of the `BankAccount` class, simply call the class constructor:
+
+```python
+account = BankAccount("123456789", 1000)
